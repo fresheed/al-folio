@@ -15,12 +15,23 @@ section h2 {
 
 {% assign r = site.data.resume %}
 
+{% assign img = "/assets/images/egor.png" %}
+
 <section>
   <h2>{{ r.basics.name }} </h2>
   {{ r.basics.summary }} <br/>
   {{ r.basics.email }}, {{ r.basics.url }} <br/>
   {{ r.basics.location.city }}, {{ r.basics.location.country }}
 </section>
+
+{% if r.interests and r.interests.size > 0 %}
+<section>
+  <h3>Professional interests</h3>
+  {% for i in r.interests %}
+      {{ i.name }}{% unless forloop.last %}, {% endunless %}
+  {% endfor %}
+</section>
+{% endif %}
 
 {% if r.publications and r.publications.size > 0 %}
 <section>
@@ -52,17 +63,8 @@ section h2 {
     <div>
       <em>{{ w.startDate| date: "%B %Y" }} – {{ w.endDate| date: "%B %Y" }}</em> : 
       <strong>{{ w.name }}</strong> ({{w.location}}) — {{ w.position }}
-
       {% if w.summary %}
         <p>{{ w.summary }}</p>
-      {% endif %}
-
-      {% if w.highlights and w.highlights.size > 0 %}
-        <ul>
-          {% for h in w.highlights %}
-            <li>{{ h }}</li>
-          {% endfor %}
-        </ul>
       {% endif %}
     </div>
   {% endfor %}
@@ -125,15 +127,6 @@ section h2 {
     {% for l in r.languages %}
       {{ l.language }} — {{ l.fluency }}{% unless forloop.last %}, {% endunless %}
     {% endfor %}
-</section>
-{% endif %}
-
-{% if r.interests and r.interests.size > 0 %}
-<section>
-  <h3>Interests</h3>
-  {% for i in r.interests %}
-      {{ i.name }}{% unless forloop.last %}, {% endunless %}
-  {% endfor %}
 </section>
 {% endif %}
 
