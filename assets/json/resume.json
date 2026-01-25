@@ -43,6 +43,29 @@
       "summary": "Weak memory research, teaching"
     }
   ],
+  "teaching": [
+    {
+      "name": "Computability and Logic",      
+      "years": "2023, 2024, 2025",
+      "term": "Spring",
+      "summary": "Exercise classes, grading, Q&A sessions, preparation of assignments",
+      "url": "https://kursuskatalog.au.dk/en/course/133278/Computability-and-Logic"
+    },
+    {
+      "name": "Compilers",
+      "term": "Fall",
+      "years": "2023, 2024",
+      "summary": "Exercise classes, grading, Q&A sessions, developing automation framework for grading",
+      "url": "https://au-compilers.github.io/dovs2024-web/"
+    },
+    {
+      "name": "Programming languages semantics",
+      "term": "Spring",
+      "years": "2021, 2022",
+      "summary": "Exercise classes, grading, lectures",
+      "url": "https://compscicenter.ru/courses/programming-language-semantics/2022-spring/"
+    }
+  ],
   "volunteer": [
     {
       "organization": "Helping to Leave",
@@ -88,7 +111,8 @@
         "OCaml",
         "Python",
         "Haskell",
-        "Rust"
+        "Rust",
+        "also: C, Java, Kotlin, Elisp, Groovy..."
       ]
     },
     {
@@ -172,6 +196,23 @@
       "startDate": "2022-09-01",
       "endDate": "present",
       "url": "https://github.com/logsem/trillium"
+    }
+  ],
+  "misc": [
+    {
+      "summary": "Attended OPLSS Summer school",
+      "url": "https://www.cs.uoregon.edu/research/summerschool/summer24/",
+      "date": "2024-06"
+    },
+    {
+      "summary": "Artifact Evaluation Committee member at PLDI'21",
+      "url": "https://pldi21.sigplan.org/committee/pldi-2021-PLDI-Research-Artifacts-artifact-evaluation-committee",
+      "date": "2021"
+    },
+    {
+      "summary": "Internship at MPI-SWS with Viktor Vafeiadis",
+      "url": "https://www.mpi-sws.org/research-areas/programming-languages-and-verification/",
+      "date": "2020-(03-06)"
     }
   ]
 }
